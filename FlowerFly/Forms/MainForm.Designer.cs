@@ -31,8 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.radMenuComboItem1 = new Telerik.WinControls.UI.RadMenuComboItem();
             this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
-            this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
+            this.radListControl1 = new Telerik.WinControls.UI.RadListControl();
+            this.themeManager1 = new FlowerFly.Controllers.ThemeManager();
+            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radMenuComboItem1.ComboBoxElement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuComboItem1
@@ -81,17 +85,37 @@
             this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
             this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // radListControl1
+            // 
+            this.radListControl1.Location = new System.Drawing.Point(51, 44);
+            this.radListControl1.Name = "radListControl1";
+            this.radListControl1.Size = new System.Drawing.Size(414, 141);
+            this.radListControl1.TabIndex = 0;
+            this.radListControl1.Text = "radListControl1";
+            // 
+            // radButton1
+            // 
+            this.radButton1.Location = new System.Drawing.Point(355, 191);
+            this.radButton1.Name = "radButton1";
+            this.radButton1.Size = new System.Drawing.Size(110, 24);
+            this.radButton1.TabIndex = 1;
+            this.radButton1.Text = "Apply Theme";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.radButton1);
+            this.Controls.Add(this.radListControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FlowerFly - Your own desktop aide";
             ((System.ComponentModel.ISupportInitialize)(this.radMenuComboItem1.ComboBoxElement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -100,6 +124,8 @@
 
         private Telerik.WinControls.UI.RadMenuComboItem radMenuComboItem1;
         private Telerik.WinControls.UI.RadMenuSeparatorItem radMenuSeparatorItem1;
-        private Telerik.WinControls.RadThemeManager radThemeManager1;
+        private Telerik.WinControls.UI.RadListControl radListControl1;
+        private Controllers.ThemeManager themeManager1;
+        private Telerik.WinControls.UI.RadButton radButton1;
     }
 }

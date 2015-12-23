@@ -120,6 +120,9 @@
     <Compile Include="Components\TweakBox.Designer.cs">
       <DependentUpon>TweakBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ThemeManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
