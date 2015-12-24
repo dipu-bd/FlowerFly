@@ -7,24 +7,29 @@ namespace FlowerFly.Models
 {
     public abstract class FlyModel
     {
+        #region Fields 
+
         private string mTitle;
         private string mDescription;
         private DateTime mLastModified;
         private DateTime mCreationTime;
 
+        #endregion
+
+        #region Initializers
+
+        /// <summary>
+        /// Creates a new instance
+        /// </summary>
         public FlyModel()
         {
             mCreationTime = DateTime.Now;
             mLastModified = DateTime.Now;
         }
-        
-        /// <summary>
-        /// Update the last modified time to current date-time.
-        /// </summary>
-        protected void SetModified()
-        {
-            mLastModified = DateTime.Now;
-        }
+
+        #endregion
+
+        #region Properties
 
         /// <summary>
         /// Gets or sets the title.
@@ -73,5 +78,20 @@ namespace FlowerFly.Models
                 return mCreationTime;
             }
         }
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Update the last modified time to current date-time.
+        /// </summary>
+        protected void SetModified()
+        {
+            mLastModified = DateTime.Now;
+        }
+
+        #endregion
+
     }
 }

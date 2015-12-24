@@ -34,18 +34,20 @@
             this.rightSplitPanel = new Telerik.WinControls.UI.SplitPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.radTextBox1 = new Telerik.WinControls.UI.RadTextBox();
+            this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
+            this.categoryPage = new Telerik.WinControls.UI.RadPageViewPage();
+            this.categoryList = new Telerik.WinControls.UI.RadListControl();
+            this.timelinePage = new Telerik.WinControls.UI.RadPageViewPage();
             this.customShape1 = new Telerik.WinControls.OldShapeEditor.CustomShape();
             this.customShape2 = new Telerik.WinControls.CustomShape(this.components);
             this.object_d507a918_8fdb_473a_81c1_5d22260d8de9 = new Telerik.WinControls.RootRadElement();
             this.object_c3730bfd_80cb_4b04_8477_dc4177d4a8bb = new Telerik.WinControls.RootRadElement();
             this.object_ecc0be87_52cb_44fe_bbec_041c51986d8a = new Telerik.WinControls.RootRadElement();
-            this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
-            this.categoryPage = new Telerik.WinControls.UI.RadPageViewPage();
-            this.timelinePage = new Telerik.WinControls.UI.RadPageViewPage();
-            this.categoryList = new Telerik.WinControls.UI.RadListControl();
+            this.radListView1 = new Telerik.WinControls.UI.RadListView();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leftSplitPanel)).BeginInit();
+            this.leftSplitPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rightSplitPanel)).BeginInit();
             this.rightSplitPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -54,6 +56,7 @@
             this.radPageView1.SuspendLayout();
             this.categoryPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.categoryList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radListView1)).BeginInit();
             this.SuspendLayout();
             // 
             // radSplitContainer1
@@ -69,10 +72,10 @@
             this.radSplitContainer1.TabStop = false;
             this.radSplitContainer1.Text = "radSplitContainer1";
             this.radSplitContainer1.ThemeName = "Office2010Black";
-            ((Telerik.WinControls.UI.SplitterElement)(this.radSplitContainer1.GetChildAt(1).GetChildAt(0))).AutoSize = false;
             // 
             // leftSplitPanel
             // 
+            this.leftSplitPanel.Controls.Add(this.radListView1);
             this.leftSplitPanel.Location = new System.Drawing.Point(0, 0);
             this.leftSplitPanel.Name = "leftSplitPanel";
             this.leftSplitPanel.Size = new System.Drawing.Size(350, 350);
@@ -128,6 +131,57 @@
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.radTextBox1.GetChildAt(0).GetChildAt(2))).RightWidth = 0F;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.radTextBox1.GetChildAt(0).GetChildAt(2))).BottomWidth = 5F;
             // 
+            // radPageView1
+            // 
+            this.radPageView1.Controls.Add(this.categoryPage);
+            this.radPageView1.Controls.Add(this.timelinePage);
+            this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radPageView1.ItemSizeMode = ((Telerik.WinControls.UI.PageViewItemSizeMode)((Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth | Telerik.WinControls.UI.PageViewItemSizeMode.EqualHeight)));
+            this.radPageView1.Location = new System.Drawing.Point(3, 32);
+            this.radPageView1.Name = "radPageView1";
+            this.radPageView1.SelectedPage = this.categoryPage;
+            this.radPageView1.Size = new System.Drawing.Size(190, 315);
+            this.radPageView1.TabIndex = 1;
+            this.radPageView1.Text = "radPageView1";
+            this.radPageView1.ThemeName = "Office2010Black";
+            this.radPageView1.ViewMode = Telerik.WinControls.UI.PageViewMode.Stack;
+            ((Telerik.WinControls.UI.RadPageViewStackElement)(this.radPageView1.GetChildAt(0))).ItemSelectionMode = Telerik.WinControls.UI.StackViewItemSelectionMode.ContentWithSelected;
+            ((Telerik.WinControls.UI.RadPageViewStackElement)(this.radPageView1.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(1);
+            ((Telerik.WinControls.UI.RadPageViewContentAreaElement)(this.radPageView1.GetChildAt(0).GetChildAt(0))).Padding = new System.Windows.Forms.Padding(1);
+            ((Telerik.WinControls.UI.RadPageViewLabelElement)(this.radPageView1.GetChildAt(0).GetChildAt(1))).Text = "Category";
+            ((Telerik.WinControls.UI.RadPageViewLabelElement)(this.radPageView1.GetChildAt(0).GetChildAt(1))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+            // 
+            // categoryPage
+            // 
+            this.categoryPage.Controls.Add(this.categoryList);
+            this.categoryPage.ItemSize = new System.Drawing.SizeF(188F, 32F);
+            this.categoryPage.Location = new System.Drawing.Point(3, 33);
+            this.categoryPage.Name = "categoryPage";
+            this.categoryPage.Size = new System.Drawing.Size(184, 249);
+            this.categoryPage.Text = "Category";
+            // 
+            // categoryList
+            // 
+            this.categoryList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.categoryList.Location = new System.Drawing.Point(0, 0);
+            this.categoryList.Name = "categoryList";
+            this.categoryList.Size = new System.Drawing.Size(184, 249);
+            this.categoryList.TabIndex = 0;
+            this.categoryList.Text = "Category List";
+            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderWidth = 0F;
+            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderLeftWidth = 0F;
+            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderTopWidth = 0F;
+            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderRightWidth = 0F;
+            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderBottomWidth = 0F;
+            // 
+            // timelinePage
+            // 
+            this.timelinePage.ItemSize = new System.Drawing.SizeF(188F, 32F);
+            this.timelinePage.Location = new System.Drawing.Point(5, 66);
+            this.timelinePage.Name = "timelinePage";
+            this.timelinePage.Size = new System.Drawing.Size(180, 244);
+            this.timelinePage.Text = "Timeline";
+            // 
             // customShape1
             // 
             this.customShape1.Dimension = new System.Drawing.Rectangle(0, 0, 0, 0);
@@ -155,56 +209,22 @@
             this.object_ecc0be87_52cb_44fe_bbec_041c51986d8a.StretchHorizontally = true;
             this.object_ecc0be87_52cb_44fe_bbec_041c51986d8a.StretchVertically = true;
             // 
-            // radPageView1
+            // radListView1
             // 
-            this.radPageView1.Controls.Add(this.categoryPage);
-            this.radPageView1.Controls.Add(this.timelinePage);
-            this.radPageView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radPageView1.ItemSizeMode = ((Telerik.WinControls.UI.PageViewItemSizeMode)((Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth | Telerik.WinControls.UI.PageViewItemSizeMode.EqualHeight)));
-            this.radPageView1.Location = new System.Drawing.Point(3, 32);
-            this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.categoryPage;
-            this.radPageView1.Size = new System.Drawing.Size(190, 315);
-            this.radPageView1.TabIndex = 1;
-            this.radPageView1.Text = "radPageView1";
-            this.radPageView1.ThemeName = "Office2010Black";
-            this.radPageView1.ViewMode = Telerik.WinControls.UI.PageViewMode.Stack;
-            ((Telerik.WinControls.UI.RadPageViewStackElement)(this.radPageView1.GetChildAt(0))).ItemSelectionMode = Telerik.WinControls.UI.StackViewItemSelectionMode.ContentWithSelected;
-            ((Telerik.WinControls.UI.RadPageViewStackElement)(this.radPageView1.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(1);
-            ((Telerik.WinControls.UI.RadPageViewContentAreaElement)(this.radPageView1.GetChildAt(0).GetChildAt(0))).Padding = new System.Windows.Forms.Padding(1);
-            ((Telerik.WinControls.UI.RadPageViewLabelElement)(this.radPageView1.GetChildAt(0).GetChildAt(1))).Text = "Category";
-            ((Telerik.WinControls.UI.RadPageViewLabelElement)(this.radPageView1.GetChildAt(0).GetChildAt(1))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
-            // 
-            // categoryPage
-            // 
-            this.categoryPage.Controls.Add(this.categoryList);
-            this.categoryPage.ItemSize = new System.Drawing.SizeF(188F, 27F);
-            this.categoryPage.Location = new System.Drawing.Point(4, 32);
-            this.categoryPage.Name = "categoryPage";
-            this.categoryPage.Size = new System.Drawing.Size(182, 251);
-            this.categoryPage.Text = "Category";
-            // 
-            // timelinePage
-            // 
-            this.timelinePage.ItemSize = new System.Drawing.SizeF(188F, 27F);
-            this.timelinePage.Location = new System.Drawing.Point(5, 66);
-            this.timelinePage.Name = "timelinePage";
-            this.timelinePage.Size = new System.Drawing.Size(180, 244);
-            this.timelinePage.Text = "Timeline";
-            // 
-            // categoryList
-            // 
-            this.categoryList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.categoryList.Location = new System.Drawing.Point(0, 0);
-            this.categoryList.Name = "categoryList";
-            this.categoryList.Size = new System.Drawing.Size(182, 251);
-            this.categoryList.TabIndex = 0;
-            this.categoryList.Text = "Category List";
-            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderWidth = 0F;
-            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderLeftWidth = 0F;
-            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderTopWidth = 0F;
-            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderRightWidth = 0F;
-            ((Telerik.WinControls.UI.RadListElement)(this.categoryList.GetChildAt(0))).BorderBottomWidth = 0F;
+            this.radListView1.AllowArbitraryItemHeight = true;
+            this.radListView1.AllowEdit = false;
+            this.radListView1.AllowRemove = false;
+            this.radListView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.radListView1.EnableKineticScrolling = true;
+            this.radListView1.FullRowSelect = false;
+            this.radListView1.ItemSize = new System.Drawing.Size(64, 64);
+            this.radListView1.Location = new System.Drawing.Point(0, 0);
+            this.radListView1.Name = "radListView1";
+            this.radListView1.Padding = new System.Windows.Forms.Padding(10);
+            this.radListView1.Size = new System.Drawing.Size(350, 350);
+            this.radListView1.TabIndex = 0;
+            this.radListView1.Text = "radListView1";
+            this.radListView1.ViewType = Telerik.WinControls.UI.ListViewType.IconsView;
             // 
             // NoteBox
             // 
@@ -217,6 +237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();
             this.radSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.leftSplitPanel)).EndInit();
+            this.leftSplitPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rightSplitPanel)).EndInit();
             this.rightSplitPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -226,6 +247,7 @@
             this.radPageView1.ResumeLayout(false);
             this.categoryPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.categoryList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radListView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,5 +268,6 @@
         private Telerik.WinControls.UI.RadPageViewPage timelinePage;
         private Telerik.WinControls.RootRadElement object_ecc0be87_52cb_44fe_bbec_041c51986d8a;
         private Telerik.WinControls.UI.RadListControl categoryList;
+        private Telerik.WinControls.UI.RadListView radListView1;
     }
 }

@@ -1,13 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
-namespace FlowerFly.Models
+namespace FlowerFly.Models.NoteModel
 {
     public class Note : FlyModel
-    { 
-        private string mContent;  
+    {
+        #region Fields
+
+        private string mContent;
+        private List<Category> mCategories;
+
+        #endregion
+
+        #region Initializers
 
         /// <summary>
         /// Create a new note.
@@ -16,12 +24,16 @@ namespace FlowerFly.Models
         /// <param name="description">Description of the note.</param>
         /// <param name="content">Content of the note.</param>
         public Note(string title = "", string description = "", string content = "")
-        { 
+        {
             Title = title;
             Description = description;
-            Content = content; 
+            Content = content;
         }
-     
+
+        #endregion
+
+        #region Properties
+
         /// <summary>
         /// Gets or sets the content of the note.
         /// </summary>
@@ -34,6 +46,29 @@ namespace FlowerFly.Models
                 SetModified();
             }
         }
-         
+
+        /// <summary>
+        /// Gets or sets the category list of the note.
+        /// </summary>
+        public ReadOnlyCollection<Category> CategoryList
+        {
+            get { return mCategories.AsReadOnly(); }
+        }
+
+        #endregion
+
+        #region Methods
+
+        public void AddCategory(Category category)
+        {
+            if (!mCategories.Contains(category))
+            {
+                mCategories.Add(category);
+                category.AddNote(this);
+            }
+        }
+
+        #endregion
+
     }
 }
