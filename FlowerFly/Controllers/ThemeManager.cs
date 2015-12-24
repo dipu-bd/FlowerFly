@@ -34,24 +34,15 @@ namespace FlowerFly.Controllers
             ThemeResolutionService.AllowAnimations = true;
         }
 
-        Telerik.WinControls.Themes.AquaTheme aquaTheme;
-        Telerik.WinControls.Themes.BreezeTheme breezeTheme;
-        Telerik.WinControls.Themes.DesertTheme desertTheme;
-        Telerik.WinControls.Themes.HighContrastBlackTheme highContrastBlackTheme;
-        Telerik.WinControls.Themes.Office2007BlackTheme office2007BlackTheme;
-        Telerik.WinControls.Themes.Office2007SilverTheme office2007SilverTheme;
-        Telerik.WinControls.Themes.Office2010BlackTheme office2010BlackTheme;
-        Telerik.WinControls.Themes.Office2010BlueTheme office2010BlueTheme;
-        Telerik.WinControls.Themes.Office2010SilverTheme office2010SilverTheme;
-        Telerik.WinControls.Themes.Office2013DarkTheme office2013DarkTheme;
-        Telerik.WinControls.Themes.Office2013LightTheme office2013LightTheme;
-        Telerik.WinControls.Themes.TelerikMetroBlueTheme telerikMetroBlueTheme;
-        Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme;
-        Telerik.WinControls.Themes.TelerikMetroTouchTheme telerikMetroTouchTheme;
-        Telerik.WinControls.Themes.VisualStudio2012DarkTheme visualStudio2012DarkTheme;
-        Telerik.WinControls.Themes.VisualStudio2012LightTheme visualStudio2012LightTheme;
-        Telerik.WinControls.Themes.Windows7Theme windows7Theme;
-        Telerik.WinControls.Themes.Windows8Theme windows8Theme;
+        public void SetTheme(string ThemeName)
+        {
+            ThemeResolutionService.ApplicationThemeName = ThemeName;
+        }
+
+        public void SetTheme(RadThemeComponentBase Theme)
+        {
+            ThemeResolutionService.ApplicationThemeName = Theme.ThemeName;
+        }
 
         public string[] GetThemeList()
         {
@@ -76,10 +67,25 @@ namespace FlowerFly.Controllers
                 windows8Theme.ThemeName
             };
         }
-        
-        public void SetTheme(string ThemeName)
-        {
-            ThemeResolutionService.ApplicationThemeName = ThemeName;
-        }
+
+        public AquaTheme aquaTheme { get; private set; }
+        public BreezeTheme breezeTheme { get; private set; }
+        public DesertTheme desertTheme { get; private set; }
+        public HighContrastBlackTheme highContrastBlackTheme { get; private set; }
+        public Office2007BlackTheme office2007BlackTheme { get; private set; }
+        public Office2007SilverTheme office2007SilverTheme { get; private set; }
+        public Office2010BlackTheme office2010BlackTheme { get; private set; }
+        public Office2010BlueTheme office2010BlueTheme { get; private set; }
+        public Office2010SilverTheme office2010SilverTheme { get; private set; }
+        public Office2013DarkTheme office2013DarkTheme { get; private set; }
+        public Office2013LightTheme office2013LightTheme { get; private set; }
+        public TelerikMetroBlueTheme telerikMetroBlueTheme { get; private set; }
+        public TelerikMetroTheme telerikMetroTheme { get; private set; }
+        public TelerikMetroTouchTheme telerikMetroTouchTheme { get; private set; }
+        public VisualStudio2012DarkTheme visualStudio2012DarkTheme { get; private set; }
+        public VisualStudio2012LightTheme visualStudio2012LightTheme { get; private set; }
+        public Windows7Theme windows7Theme { get; private set; }
+        public Windows8Theme windows8Theme { get; private set; }
+
     }
 }

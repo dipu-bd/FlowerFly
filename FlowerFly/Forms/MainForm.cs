@@ -18,6 +18,8 @@ namespace FlowerFly
         {
             InitializeComponent();
 
+            themeManager1.SetTheme(themeManager1.telerikMetroBlueTheme);
+
             radListControl1.DataSource = themeManager1.GetThemeList();
 
             radButton1.Click += delegate(object sender, EventArgs e)
