@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.radMenuComboItem1 = new Telerik.WinControls.UI.RadMenuComboItem();
-            this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
-            this.radListControl1 = new Telerik.WinControls.UI.RadListControl();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radPageView1 = new Telerik.WinControls.UI.RadPageView();
             this.notePage = new Telerik.WinControls.UI.RadPageViewPage();
             this.routinePage = new Telerik.WinControls.UI.RadPageViewPage();
@@ -40,80 +36,23 @@
             this.linkPage = new Telerik.WinControls.UI.RadPageViewPage();
             this.tweakPage = new Telerik.WinControls.UI.RadPageViewPage();
             this.settingPage = new Telerik.WinControls.UI.RadPageViewPage();
+            this.noteBox1 = new FlowerFly.Components.NoteBox();
+            this.routineBox1 = new FlowerFly.Components.RoutineBox();
+            this.toolBox1 = new FlowerFly.Components.ToolBox();
+            this.linkBox1 = new FlowerFly.Components.LinkBox();
+            this.tweakBox1 = new FlowerFly.Components.TweakBox();
+            this.settingBox1 = new FlowerFly.Components.SettingBox();
             this.themeManager1 = new FlowerFly.Controllers.ThemeManager();
-            ((System.ComponentModel.ISupportInitialize)(this.radMenuComboItem1.ComboBoxElement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
+            this.notePage.SuspendLayout();
+            this.routinePage.SuspendLayout();
+            this.toolPage.SuspendLayout();
+            this.linkPage.SuspendLayout();
+            this.tweakPage.SuspendLayout();
             this.settingPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
-            // 
-            // radMenuComboItem1
-            // 
-            this.radMenuComboItem1.AccessibleDescription = "radMenuComboItem1";
-            this.radMenuComboItem1.AccessibleName = "radMenuComboItem1";
-            // 
-            // 
-            // 
-            this.radMenuComboItem1.ComboBoxElement.AutoCompleteAppend = null;
-            this.radMenuComboItem1.ComboBoxElement.AutoCompleteDataSource = null;
-            this.radMenuComboItem1.ComboBoxElement.AutoCompleteSuggest = null;
-            this.radMenuComboItem1.ComboBoxElement.DataMember = "";
-            this.radMenuComboItem1.ComboBoxElement.DataSource = null;
-            this.radMenuComboItem1.ComboBoxElement.DefaultValue = null;
-            this.radMenuComboItem1.ComboBoxElement.DisplayMember = "";
-            this.radMenuComboItem1.ComboBoxElement.DropDownAnimationEasing = Telerik.WinControls.RadEasingType.Default;
-            this.radMenuComboItem1.ComboBoxElement.DropDownAnimationEnabled = true;
-            this.radMenuComboItem1.ComboBoxElement.EditableElementText = "";
-            this.radMenuComboItem1.ComboBoxElement.EditorElement = this.radMenuComboItem1.ComboBoxElement;
-            this.radMenuComboItem1.ComboBoxElement.EditorManager = null;
-            this.radMenuComboItem1.ComboBoxElement.Filter = null;
-            this.radMenuComboItem1.ComboBoxElement.FilterExpression = "";
-            this.radMenuComboItem1.ComboBoxElement.Focusable = true;
-            this.radMenuComboItem1.ComboBoxElement.FormatString = "";
-            this.radMenuComboItem1.ComboBoxElement.FormattingEnabled = true;
-            this.radMenuComboItem1.ComboBoxElement.ItemHeight = 18;
-            this.radMenuComboItem1.ComboBoxElement.MaxDropDownItems = 0;
-            this.radMenuComboItem1.ComboBoxElement.MaxLength = 65535;
-            this.radMenuComboItem1.ComboBoxElement.MaxValue = null;
-            this.radMenuComboItem1.ComboBoxElement.MinValue = null;
-            this.radMenuComboItem1.ComboBoxElement.NullValue = null;
-            this.radMenuComboItem1.ComboBoxElement.OwnerOffset = 0;
-            this.radMenuComboItem1.ComboBoxElement.ShowImageInEditorArea = true;
-            this.radMenuComboItem1.ComboBoxElement.SortStyle = Telerik.WinControls.Enumerations.SortStyle.None;
-            this.radMenuComboItem1.ComboBoxElement.Value = null;
-            this.radMenuComboItem1.ComboBoxElement.ValueMember = "";
-            this.radMenuComboItem1.Name = "radMenuComboItem1";
-            this.radMenuComboItem1.Text = "radMenuComboItem1";
-            // 
-            // radMenuSeparatorItem1
-            // 
-            this.radMenuSeparatorItem1.AccessibleDescription = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.AccessibleName = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.Name = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.Text = "radMenuSeparatorItem1";
-            this.radMenuSeparatorItem1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // radListControl1
-            // 
-            this.radListControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radListControl1.Location = new System.Drawing.Point(3, 3);
-            this.radListControl1.Name = "radListControl1";
-            this.radListControl1.Size = new System.Drawing.Size(554, 273);
-            this.radListControl1.TabIndex = 0;
-            this.radListControl1.Text = "radListControl1";
-            // 
-            // radButton1
-            // 
-            this.radButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.radButton1.Location = new System.Drawing.Point(447, 282);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(110, 24);
-            this.radButton1.TabIndex = 1;
-            this.radButton1.Text = "Apply Theme";
             // 
             // radPageView1
             // 
@@ -127,7 +66,7 @@
             this.radPageView1.ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth;
             this.radPageView1.Location = new System.Drawing.Point(0, 0);
             this.radPageView1.Name = "radPageView1";
-            this.radPageView1.SelectedPage = this.settingPage;
+            this.radPageView1.SelectedPage = this.notePage;
             this.radPageView1.Size = new System.Drawing.Size(584, 361);
             this.radPageView1.TabIndex = 2;
             this.radPageView1.Text = "radPageView1";
@@ -140,19 +79,22 @@
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).ItemSpacing = 0;
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).ItemSizeMode = Telerik.WinControls.UI.PageViewItemSizeMode.EqualWidth;
             ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).ItemContentOrientation = Telerik.WinControls.UI.PageViewContentOrientation.Auto;
+            ((Telerik.WinControls.UI.RadPageViewStripElement)(this.radPageView1.GetChildAt(0))).Padding = new System.Windows.Forms.Padding(3);
             // 
             // notePage
             // 
-            this.notePage.ItemSize = new System.Drawing.SizeF(91F, 30F);
-            this.notePage.Location = new System.Drawing.Point(12, 40);
+            this.notePage.Controls.Add(this.noteBox1);
+            this.notePage.ItemSize = new System.Drawing.SizeF(92F, 30F);
+            this.notePage.Location = new System.Drawing.Point(9, 37);
             this.notePage.Name = "notePage";
-            this.notePage.Size = new System.Drawing.Size(560, 309);
+            this.notePage.Size = new System.Drawing.Size(566, 315);
             this.notePage.Text = "Notes";
             this.notePage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // routinePage
             // 
-            this.routinePage.ItemSize = new System.Drawing.SizeF(91F, 30F);
+            this.routinePage.Controls.Add(this.routineBox1);
+            this.routinePage.ItemSize = new System.Drawing.SizeF(92F, 30F);
             this.routinePage.Location = new System.Drawing.Point(12, 40);
             this.routinePage.Name = "routinePage";
             this.routinePage.Size = new System.Drawing.Size(560, 309);
@@ -161,7 +103,8 @@
             // 
             // toolPage
             // 
-            this.toolPage.ItemSize = new System.Drawing.SizeF(91F, 30F);
+            this.toolPage.Controls.Add(this.toolBox1);
+            this.toolPage.ItemSize = new System.Drawing.SizeF(92F, 30F);
             this.toolPage.Location = new System.Drawing.Point(12, 40);
             this.toolPage.Name = "toolPage";
             this.toolPage.Size = new System.Drawing.Size(560, 309);
@@ -170,7 +113,8 @@
             // 
             // linkPage
             // 
-            this.linkPage.ItemSize = new System.Drawing.SizeF(91F, 30F);
+            this.linkPage.Controls.Add(this.linkBox1);
+            this.linkPage.ItemSize = new System.Drawing.SizeF(92F, 30F);
             this.linkPage.Location = new System.Drawing.Point(12, 40);
             this.linkPage.Name = "linkPage";
             this.linkPage.Size = new System.Drawing.Size(560, 309);
@@ -179,19 +123,19 @@
             // 
             // tweakPage
             // 
-            this.tweakPage.ItemSize = new System.Drawing.SizeF(91F, 30F);
-            this.tweakPage.Location = new System.Drawing.Point(12, 40);
+            this.tweakPage.Controls.Add(this.tweakBox1);
+            this.tweakPage.ItemSize = new System.Drawing.SizeF(92F, 30F);
+            this.tweakPage.Location = new System.Drawing.Point(9, 37);
             this.tweakPage.Name = "tweakPage";
-            this.tweakPage.Size = new System.Drawing.Size(560, 309);
+            this.tweakPage.Size = new System.Drawing.Size(566, 315);
             this.tweakPage.Text = "Tweaks";
             this.tweakPage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // settingPage
             // 
-            this.settingPage.Controls.Add(this.radListControl1);
-            this.settingPage.Controls.Add(this.radButton1);
+            this.settingPage.Controls.Add(this.settingBox1);
             this.settingPage.Description = "Configure FlowerFly in your taste";
-            this.settingPage.ItemSize = new System.Drawing.SizeF(91F, 30F);
+            this.settingPage.ItemSize = new System.Drawing.SizeF(92F, 30F);
             this.settingPage.Location = new System.Drawing.Point(12, 40);
             this.settingPage.Name = "settingPage";
             this.settingPage.Size = new System.Drawing.Size(560, 309);
@@ -199,6 +143,55 @@
             this.settingPage.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.settingPage.Title = "Settings";
             this.settingPage.ToolTipText = "Configure FlowerFly in your taste";
+            // 
+            // noteBox1
+            // 
+            this.noteBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.noteBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noteBox1.Location = new System.Drawing.Point(0, 0);
+            this.noteBox1.Name = "noteBox1";
+            this.noteBox1.Size = new System.Drawing.Size(566, 315);
+            this.noteBox1.TabIndex = 0;
+            // 
+            // routineBox1
+            // 
+            this.routineBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routineBox1.Location = new System.Drawing.Point(0, 0);
+            this.routineBox1.Name = "routineBox1";
+            this.routineBox1.Size = new System.Drawing.Size(560, 309);
+            this.routineBox1.TabIndex = 0;
+            // 
+            // toolBox1
+            // 
+            this.toolBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolBox1.Location = new System.Drawing.Point(0, 0);
+            this.toolBox1.Name = "toolBox1";
+            this.toolBox1.Size = new System.Drawing.Size(560, 309);
+            this.toolBox1.TabIndex = 0;
+            // 
+            // linkBox1
+            // 
+            this.linkBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkBox1.Location = new System.Drawing.Point(0, 0);
+            this.linkBox1.Name = "linkBox1";
+            this.linkBox1.Size = new System.Drawing.Size(560, 309);
+            this.linkBox1.TabIndex = 0;
+            // 
+            // tweakBox1
+            // 
+            this.tweakBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tweakBox1.Location = new System.Drawing.Point(0, 0);
+            this.tweakBox1.Name = "tweakBox1";
+            this.tweakBox1.Size = new System.Drawing.Size(566, 315);
+            this.tweakBox1.TabIndex = 0;
+            // 
+            // settingBox1
+            // 
+            this.settingBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingBox1.Location = new System.Drawing.Point(0, 0);
+            this.settingBox1.Name = "settingBox1";
+            this.settingBox1.Size = new System.Drawing.Size(560, 309);
+            this.settingBox1.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -209,25 +202,35 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            // 
+            // 
+            // 
+            this.RootElement.ApplyShapeToControl = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FlowerFly - Your own desktop aide";
-            ((System.ComponentModel.ISupportInitialize)(this.radMenuComboItem1.ComboBoxElement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radListControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            this.ThemeName = "Office2010Black";
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).EndInit();
             this.radPageView1.ResumeLayout(false);
+            this.notePage.ResumeLayout(false);
+            this.routinePage.ResumeLayout(false);
+            this.toolPage.ResumeLayout(false);
+            this.linkPage.ResumeLayout(false);
+            this.tweakPage.ResumeLayout(false);
             this.settingPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Telerik.WinControls.UI.RadMenuComboItem radMenuComboItem1;
-        private Telerik.WinControls.UI.RadMenuSeparatorItem radMenuSeparatorItem1;
-        private Telerik.WinControls.UI.RadListControl radListControl1;
+        private Components.NoteBox noteBox1;
+        private Components.RoutineBox routineBox1;
+        private Components.ToolBox toolBox1;
+        private Components.TweakBox tweakBox1;
+        private Components.LinkBox linkBox1;
+        private Components.SettingBox settingBox1;
         private Controllers.ThemeManager themeManager1;
-        private Telerik.WinControls.UI.RadButton radButton1;
         private Telerik.WinControls.UI.RadPageView radPageView1;
         private Telerik.WinControls.UI.RadPageViewPage notePage;
         private Telerik.WinControls.UI.RadPageViewPage routinePage;

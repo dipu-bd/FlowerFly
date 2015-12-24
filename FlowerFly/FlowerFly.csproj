@@ -54,6 +54,7 @@
       <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.GridView.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.RichTextBox, Version=2015.2.728.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2015.2.728.40\Telerik.WinControls.RichTextBox.dll</HintPath>
       <Private>True</Private>
@@ -90,6 +91,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\LinkBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\LinkBox.Designer.cs">
+      <DependentUpon>LinkBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\NoteBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,9 +136,19 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Components\NoteBox.resx">
+      <DependentUpon>NoteBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\FlyModel.cs" />
     <Compile Include="Models\Link.cs" />
     <Compile Include="Models\Note.cs" />
@@ -151,6 +168,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

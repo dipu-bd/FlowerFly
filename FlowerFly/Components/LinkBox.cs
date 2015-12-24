@@ -1,24 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Telerik.WinControls;
 
-namespace FlowerFly
+namespace FlowerFly.Components
 {
-    public partial class MainForm : Telerik.WinControls.UI.RadForm
+    public partial class LinkBox : UserControl
     {
-        
-        public MainForm()
+        public LinkBox()
         {
             InitializeComponent();
-
-            themeManager1.SetTheme(themeManager1.office2010BlackTheme);             
         }
     }
 }
