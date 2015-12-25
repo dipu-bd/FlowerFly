@@ -123,7 +123,7 @@
     <Compile Include="Components\Notes\Models\Category.cs" />
     <Compile Include="Models\FlyModel.cs" />
     <Compile Include="Components\Links\Models\Link.cs" />
-    <Compile Include="Components\Notes\Models\CustomVisualItem.cs" />
+    <Compile Include="Components\Notes\Models\NoteVisualItem.cs" />
     <Compile Include="Components\Notes\Models\Note.cs" />
     <Compile Include="Components\Routines\Models\Routine.cs" />
     <Compile Include="Components\Tools\Models\Tool.cs" />
@@ -157,6 +157,8 @@
   <ItemGroup>
     <!--sirinie -->
     <Content Include="main.ico" />
+    <None Include="Resources\paper.jpg" />
+    <None Include="Resources\notepad_lines.png" />
     <None Include="Resources\wood.jpg" />
     <None Include="Resources\wall.jpg" />
     <None Include="Resources\marble.jpg" />

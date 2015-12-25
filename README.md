@@ -2,18 +2,17 @@
 
 A desktop utility application which gives the following tools-
 
-* Notes [memo]   
-* Reminders [alarm]   
-* Routine (daily / weekly / monthy) [calender]   
-* PC Tweaks [pc settings like *Environment Path*. search -> tweak]   
-* Shortcuts [one click link to important apps]   
+* Notes [memo]    
+* Routine (daily / weekly / monthy) [scheduler]   
+* Links [web site and local file and folders links]   
 * Tools [small but useful tools]   
+* PC Tweaks [pc settings like *Environment Path variables*]   
 
 Appearance and more features:
 
 * Sits quitely in the back   
 * Minimizes to taskbar   
-* Auto launch at startup   
+* Auto launch with windows
 * Custom settings and tools   
 * Auto update   
 
@@ -26,16 +25,10 @@ All project files are licenced under **BSD-3-Clause**.
 ###### Requires: 
     
     Visual Studio 2013
-    .NET Framework 4.5
-    NuGet Package Manager
+    .NET Framework 3.5
+    Telerik Q2 winforms
 
-###### Packages:
-
-    ObjectListView
-    Newtonsoft.JSON
-
-
-### Important links   
+### Important links    
 * [Main Icon from here](http://www.iconarchive.com/show/christmas-shadow-2-icons-by-pelfusion/Flower-icon.html)   
 
 ### Task flow

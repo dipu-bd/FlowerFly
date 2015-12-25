@@ -31,21 +31,22 @@ namespace FlowerFly.Components.Notes
 
         void radListView1_VisualItemCreating(object sender, Telerik.WinControls.UI.ListViewVisualItemCreatingEventArgs e)
         {
-            e.VisualItem = new CustomVisualItem();            
+            e.VisualItem = new NoteVisualItem();            
         }
 
         void addFakeItems()
         {
             List<Note> notes = new List<Note>();
             notes.Add(new Note("Hello", "This is placeholder text for hello message"));
+            notes.Add(new Note("Rrer", ""));
             notes.Add(new Note("Dipu", "Lorem ipsum dolar siet"));
             notes.Add(new Note("Mipu", "This message has no value."));
+            notes.Add(new Note("", "Utterly nonsensical bla bla bla"));
             notes.Add(new Note("Shiu", "Get outta here"));
-            notes.Add(new Note("Rrer", ""));
+            notes.Add(new Note("Tipu", "Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following..."));                        
             notes.Add(new Note("Nimkl", "This is indeed good message."));
             notes.Add(new Note("Pre", "This is placeholder text for hello message. This is indeed good message. This message has no value."));
-            notes.Add(new Note("Tipu", "Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following. Long message following..."));
-            notes.Add(new Note("Assr", "Utterly nonsensical bla bla bla"));
+            
 
             radListView1.DataSource = notes;
         }

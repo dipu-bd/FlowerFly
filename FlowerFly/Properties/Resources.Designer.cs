@@ -83,6 +83,16 @@ namespace FlowerFly.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap texture_paper {
+            get {
+                object obj = ResourceManager.GetObject("texture_paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap texture_wall {
             get {
                 object obj = ResourceManager.GetObject("texture_wall", resourceCulture);
