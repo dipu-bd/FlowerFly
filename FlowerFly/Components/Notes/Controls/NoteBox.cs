@@ -6,15 +6,17 @@ using System.Data;
 using System.Linq;
 using System.Text; 
 using System.Windows.Forms;
-using FlowerFly.Models.NoteModel;
+using FlowerFly.Notes.Models;
 
-namespace FlowerFly.Components
+namespace FlowerFly.Components.Notes
 {
     public partial class NoteBox : UserControl
     {
         public NoteBox()
         {
-            InitializeComponent();
+            InitializeComponent();                        
+
+            
 
             this.radListView1.ItemSize = new Size(200, 300); 
             this.radListView1.ItemSpacing = 10;
@@ -29,7 +31,7 @@ namespace FlowerFly.Components
 
         void radListView1_VisualItemCreating(object sender, Telerik.WinControls.UI.ListViewVisualItemCreatingEventArgs e)
         {
-            e.VisualItem = new CustomItems.CustomVisualItem();            
+            e.VisualItem = new CustomVisualItem();            
         }
 
         void addFakeItems()

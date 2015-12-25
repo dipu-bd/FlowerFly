@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text; 
+using System.Text;
+using FlowerFly.Models;
 
-namespace FlowerFly.Models.NoteModel
+namespace FlowerFly.Notes.Models
 {
     public class Category : FlyModel
     {

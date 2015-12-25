@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Drawing;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
+using FlowerFly.Models;
 
-namespace FlowerFly.Models.NoteModel
+namespace FlowerFly.Notes.Models
 {
     public class Note : FlyModel
     {
@@ -46,6 +48,11 @@ namespace FlowerFly.Models.NoteModel
                 SetModified();
             }
         }
+
+        /// <summary>
+        /// Gets or sets the back color of the note.
+        /// </summary>
+        public Color BackColor { get; set; }
 
         /// <summary>
         /// Gets or sets the category list of the note.

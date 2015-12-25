@@ -69,43 +69,43 @@
     <Reference Include="TelerikCommon, Version=2015.2.728.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\LinkBox.cs">
+    <Compile Include="Components\Links\Controls\LinkBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\LinkBox.Designer.cs">
+    <Compile Include="Components\Links\Controls\LinkBox.Designer.cs">
       <DependentUpon>LinkBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\NoteBox.cs">
+    <Compile Include="Components\Notes\Controls\NoteBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\NoteBox.Designer.cs">
+    <Compile Include="Components\Notes\Controls\NoteBox.Designer.cs">
       <DependentUpon>NoteBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\RoutineBox.cs">
+    <Compile Include="Components\Routines\Controls\RoutineBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\RoutineBox.Designer.cs">
+    <Compile Include="Components\Routines\Controls\RoutineBox.Designer.cs">
       <DependentUpon>RoutineBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\SettingBox.cs">
+    <Compile Include="Components\Settings\SettingBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\SettingBox.Designer.cs">
+    <Compile Include="Components\Settings\SettingBox.Designer.cs">
       <DependentUpon>SettingBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\ToolBox.cs">
+    <Compile Include="Components\Tools\ToolBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\ToolBox.Designer.cs">
+    <Compile Include="Components\Tools\ToolBox.Designer.cs">
       <DependentUpon>ToolBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\TweakBox.cs">
+    <Compile Include="Components\Tweaks\TweakBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\TweakBox.Designer.cs">
+    <Compile Include="Components\Tweaks\TweakBox.Designer.cs">
       <DependentUpon>TweakBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\ThemeManager.cs">
+    <Compile Include="Models\ThemeManager.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
@@ -114,20 +114,20 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Components\NoteBox.resx">
+    <EmbeddedResource Include="Components\Notes\Controls\NoteBox.resx">
       <DependentUpon>NoteBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Models\NoteModel\Category.cs" />
+    <Compile Include="Components\Notes\Models\Category.cs" />
     <Compile Include="Models\FlyModel.cs" />
-    <Compile Include="Models\LinkModel\Link.cs" />
-    <Compile Include="Models\NoteModel\CustomVisualItem.cs" />
-    <Compile Include="Models\NoteModel\Note.cs" />
-    <Compile Include="Models\RoutineModel\Routine.cs" />
-    <Compile Include="Models\ToolModel\Tool.cs" />
-    <Compile Include="Models\TweakModel\Tweak.cs" />
+    <Compile Include="Components\Links\Models\Link.cs" />
+    <Compile Include="Components\Notes\Models\CustomVisualItem.cs" />
+    <Compile Include="Components\Notes\Models\Note.cs" />
+    <Compile Include="Components\Routines\Models\Routine.cs" />
+    <Compile Include="Components\Tools\Models\Tool.cs" />
+    <Compile Include="Components\Tweaks\Models\Tweak.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -157,6 +157,10 @@
   <ItemGroup>
     <!--sirinie -->
     <Content Include="main.ico" />
+    <None Include="Resources\wood.jpg" />
+    <None Include="Resources\wall.jpg" />
+    <None Include="Resources\marble.jpg" />
+    <None Include="Resources\cork.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

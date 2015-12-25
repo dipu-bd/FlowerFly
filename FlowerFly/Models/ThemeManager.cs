@@ -5,7 +5,7 @@ using System.Text;
 using Telerik.WinControls;
 using Telerik.WinControls.Themes;
 
-namespace FlowerFly.Controllers
+namespace FlowerFly.Components
 {
     public class ThemeManager : System.ComponentModel.Component
     {

@@ -36,13 +36,13 @@
             this.linkPage = new Telerik.WinControls.UI.RadPageViewPage();
             this.tweakPage = new Telerik.WinControls.UI.RadPageViewPage();
             this.settingPage = new Telerik.WinControls.UI.RadPageViewPage();
-            this.noteBox1 = new FlowerFly.Components.NoteBox();
+            this.noteBox1 = new FlowerFly.Components.Notes.NoteBox();
             this.routineBox1 = new FlowerFly.Components.RoutineBox();
             this.toolBox1 = new FlowerFly.Components.ToolBox();
             this.linkBox1 = new FlowerFly.Components.LinkBox();
             this.tweakBox1 = new FlowerFly.Components.TweakBox();
             this.settingBox1 = new FlowerFly.Components.SettingBox();
-            this.themeManager1 = new FlowerFly.Controllers.ThemeManager();
+            this.themeManager1 = new FlowerFly.Components.ThemeManager();
             ((System.ComponentModel.ISupportInitialize)(this.radPageView1)).BeginInit();
             this.radPageView1.SuspendLayout();
             this.notePage.SuspendLayout();
@@ -224,13 +224,13 @@
 
         #endregion
 
-        private Components.NoteBox noteBox1;
+        private Components.Notes.NoteBox noteBox1;
         private Components.RoutineBox routineBox1;
         private Components.ToolBox toolBox1;
         private Components.TweakBox tweakBox1;
         private Components.LinkBox linkBox1;
         private Components.SettingBox settingBox1;
-        private Controllers.ThemeManager themeManager1;
+        private Components.ThemeManager themeManager1;
         private Telerik.WinControls.UI.RadPageView radPageView1;
         private Telerik.WinControls.UI.RadPageViewPage notePage;
         private Telerik.WinControls.UI.RadPageViewPage routinePage;

@@ -7,7 +7,7 @@ using System.Drawing;
 using Telerik.WinControls;
 using System.Windows.Forms;
 
-namespace CustomItems
+namespace FlowerFly.Notes.Models
 {
     public class CustomVisualItem : IconListViewVisualItem
     {
